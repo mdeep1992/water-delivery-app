@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signinactivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcomelogo" />
+
+    <EditText
+        android:id="@+id/signinPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="20"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:hint="password"
+        app:layout_constraintEnd_toEndOf="@+id/editsigninemail"
+        app:layout_constraintStart_toStartOf="@+id/editsigninemail"
+        app:layout_constraintTop_toBottomOf="@+id/editsigninemail" />
+
+    <EditText
+        android:id="@+id/editsigninemail"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="20"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_sign_in"
+        android:text="SIGNIN"
+        android:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>

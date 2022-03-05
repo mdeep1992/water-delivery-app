@@ -11,9 +11,9 @@
         android:layout_width="0dp"
         android:layout_height="194dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/Name"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUserName"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Name"
+        app:layout_constraintStart_toStartOf="@+id/editTextUserName"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/signupiogo" />
 
@@ -32,12 +32,12 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/Name"
+        android:id="@+id/editTextUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="Name"
+        android:hint="User name"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:inputType="textPersonName"
@@ -46,21 +46,22 @@
         tools:layout_editor_absoluteX="40dp" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/Name"
-        app:layout_constraintStart_toStartOf="@+id/Name"
-        app:layout_constraintTop_toBottomOf="@+id/Name" />
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUserName"
+        app:layout_constraintStart_toStartOf="@+id/editTextUserName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserName" />
 
     <EditText
-        android:id="@+id/mobileno"
+        android:id="@+id/editTextPhoneno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -69,11 +70,13 @@
         android:ems="10"
         android:hint="mobile number"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/email"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -82,20 +85,33 @@
         android:ems="10"
         android:hint="password"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/mobileno"
-        app:layout_constraintStart_toStartOf="@+id/mobileno"
-        app:layout_constraintTop_toBottomOf="@+id/mobileno" />
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhoneno"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhoneno"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhoneno" />
 
     <Button
-        android:id="@+id/register"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnregister"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="REGISTER"
-        android:background="@drawable/button_sign_up"
+        android:background="@drawable/button_sign_in"
+        android:backgroundTint="@null"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

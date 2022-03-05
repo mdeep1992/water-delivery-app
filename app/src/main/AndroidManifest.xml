@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WaterDeliveryApp">
         <activity
+            android:name=".signinactivity"
+            android:exported="false" />
+        <activity
             android:name=".signupactivity"
             android:exported="false" />
         <activity

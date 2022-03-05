@@ -47,6 +47,8 @@ Button btnSignIn,btnSignUp;
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent=new Intent(WelcomeActivity.this,signinactivity.class);
+                startActivity(intent);
             }
 
         });
