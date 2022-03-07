@@ -43,7 +43,8 @@ public class signinactivity extends AppCompatActivity {
     textviewforgotpassword.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-
+Intent intent=new Intent(signinactivity.this,forgotpasswordactivity.class);
+startActivity(intent);
         }
     });
 

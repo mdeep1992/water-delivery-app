@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
-        android:text="forgot password"
+        android:text="forgot password ?"
         android:textColor="#8F0707"
         android:textSize="16sp"
         android:textStyle="bold"
