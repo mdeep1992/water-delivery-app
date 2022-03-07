@@ -7,4 +7,18 @@
         <item name="colorAccent">@color/teal_200</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="mytoast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#0B0A0A</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#BCAA0A</item>
+        <item name="stSolidBackground">false</item>
+        <item name="stStrokeWidth">3dp</item>
+<!--        <item name="stStrokeColor">#0DCD15</item>-->
+<!--        <item name="stIconStart">@drawable/ic_android</item>-->
+        <item name="stLength">LONG</item> LONG or SHORT
+<!--        <item name="stGravity">center</item> top or center-->
+        <item name="stRadius">5dp</item>
+<!--        <item name="cornerRadius">10dp</item>-->
+    </style>
 </resources>

@@ -18,19 +18,7 @@
         app:srcCompat="@drawable/welcomelogo" />
 
     <EditText
-        android:id="@+id/signinPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:ems="20"
-        android:inputType="textPassword"
-        android:layout_marginTop="20dp"
-        android:hint="password"
-        app:layout_constraintEnd_toEndOf="@+id/editsigninemail"
-        app:layout_constraintStart_toStartOf="@+id/editsigninemail"
-        app:layout_constraintTop_toBottomOf="@+id/editsigninemail" />
-
-    <EditText
-        android:id="@+id/editsigninemail"
+        android:id="@+id/edittextsigninusername"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:ems="20"
@@ -43,15 +31,73 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B9B8B8"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/password_view"
+        app:layout_constraintEnd_toEndOf="@+id/edittextsigninusername"
+        app:layout_constraintStart_toStartOf="@+id/edittextsigninusername"
+        app:layout_constraintTop_toBottomOf="@+id/edittextsigninusername" >
+
+    <EditText
+        android:id="@+id/edittextsigninPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="20"
+        android:hint="password"
+        android:inputType="textPassword"
+       />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/txtsigninforgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="forgot password"
+        android:textColor="#8F0707"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_view" />
+
+    <TextView
+        android:id="@+id/txtsigninregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:text="Register"
+        android:textColor="#1530C5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_view" />
+
     <Button
-        android:id="@+id/button"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="60dp"
+        android:id="@+id/btnsignin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:layout_marginTop="40dp"
         android:background="@drawable/button_sign_in"
-        android:text="SIGNIN"
         android:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signinPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/txtsigninforgotpassword" />
+
+    <ProgressBar
+        android:id="@+id/signinprogressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

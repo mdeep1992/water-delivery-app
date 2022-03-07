@@ -16,6 +16,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
+import io.github.muddz.styleabletoast.StyleableToast;
+
 public class signupactivity extends AppCompatActivity {
     EditText editTextUserName;
     EditText editTextPassword;
@@ -67,25 +69,23 @@ btnregister.setOnClickListener(new View.OnClickListener() {
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-
-
                             if (task.isSuccessful()) {
-                                user user = new user(txtUsername, txtpassword, txtEmail, txtphoneno);
+                                user user = new user(txtUsername, txtpassword,  txtphoneno,txtEmail);
                                 FirebaseDatabase.getInstance().getReference("user").child(FirebaseAuth.getInstance().getUid())
                                         .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
                                         if (task.isSuccessful()) {
-                                            Toast.makeText(signupactivity.this, "user registered successfully", Toast.LENGTH_LONG).show();
+                                            StyleableToast.makeText(signupactivity.this,"user registered successfully",R.style.mytoast).show();
                                             progressbar.setVisibility(View.GONE);
                                         } else {
-                                            Toast.makeText(signupactivity.this, "registerion failed", Toast.LENGTH_LONG).show();
+                                            StyleableToast.makeText(signupactivity.this,"registerion failed",R.style.mytoast).show();
                                         }
                                         progressbar.setVisibility(View.GONE);
                                     }
                                 });
                             } else {
-                                Toast.makeText(signupactivity.this, "registerion failed", Toast.LENGTH_LONG).show();
+                                StyleableToast.makeText(signupactivity.this,"registerion failed",R.style.mytoast).show();
                                 progressbar.setVisibility(View.GONE);
                             }
                         }
