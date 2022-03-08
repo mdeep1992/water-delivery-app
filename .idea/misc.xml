@@ -5,6 +5,9 @@
       <map>
         <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/drawable/button_sign_in.xml" value="0.198" />
         <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/drawable/button_sign_up.xml" value="0.198" />
+        <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/drawable/header.xml" value="0.1715" />
+        <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/layout/activity_dashboardactivity.xml" value="0.21105072463768115" />
+        <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/layout/activity_drawerbaseactivity.xml" value="0.21105072463768115" />
         <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/layout/activity_forgotpasswordactivity.xml" value="0.21105072463768115" />
         <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/layout/activity_signinactivity.xml" value="0.264" />
@@ -12,6 +15,9 @@
         <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/layout/activity_splashactivity.xml" value="0.25" />
         <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/layout/activity_splashactivity2.xml" value="0.1" />
         <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/layout/activity_welcome.xml" value="0.144" />
+        <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/layout/content_layout.xml" value="0.21105072463768115" />
+        <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/layout/drawerheader.xml" value="0.2" />
+        <entry key="..\:/Users/Pradeep/AndroidStudioProjects/WaterDeliveryapp/app/src/main/res/menu/main_menu.xml" value="0.2296875" />
       </map>
     </option>
   </component>
