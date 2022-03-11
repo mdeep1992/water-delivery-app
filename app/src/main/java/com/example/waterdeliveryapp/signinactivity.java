@@ -75,9 +75,11 @@ else if (edittextpassword.length()<6){
                             if (task.isSuccessful()) {
                                 progressBar.setVisibility(View.GONE);
                                 StyleableToast.makeText(signinactivity.this, "successfully signed", R.style.mytoast).show();
+                                startActivity(new Intent(signinactivity.this,dashboardactivity.class));
                             } else {
                                 progressBar.setVisibility(View.GONE);
-                                StyleableToast.makeText(signinactivity.this, " signin failure", R.style.mytoast).show();
+
+                                StyleableToast.makeText(signinactivity.this, task.getException().getLocalizedMessage().toString(), R.style.mytoast).show();
                             }
                         }
                     });

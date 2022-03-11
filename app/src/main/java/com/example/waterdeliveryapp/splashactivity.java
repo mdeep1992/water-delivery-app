@@ -16,7 +16,7 @@ public class splashactivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashactivity);
-        getSupportActionBar().hide();
+       // getSupportActionBar().hide();
      TextView textview=findViewById(R.id.splashtext);
         Animation anim = new AlphaAnimation(0.0f, 1.5f);
         anim.setDuration(1000); //You can manage the blinking time with this parameter
