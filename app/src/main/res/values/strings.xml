@@ -2,4 +2,15 @@
     <string name="app_name">WaterDelivery app</string>
     <string name="menu_drawer_open">draweropen</string>
     <string name="menu_drawer_close">drawerclose</string>
+    <string-array name="waterbrands">
+        <item>himalayan</item>
+        <item>Qua</item>
+        <item>Tata</item>
+        <item>Kingfisher</item>
+        <item>oxyrich</item>
+        <item>Bailey</item>
+        <item>kinley</item>
+        <item>aquafina</item>
+        <item>Bislery</item>
+    </string-array>
 </resources>
