@@ -74,17 +74,15 @@ public class drawerbaseactivity extends AppCompatActivity implements NavigationV
         }
     }
    public void composeEmail() {
-
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_EMAIL, "mdeep1992@gmail.com");
-        intent.putExtra(Intent.EXTRA_SUBJECT, "SEND UR FEEDBACK");
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
-        }
-        //else{
-         //   Toast.makeText(this, "mail", Toast.LENGTH_LONG).show();
-      //  }
+       try {
+           Intent intent = new Intent(Intent.ACTION_SENDTO);
+           intent.setData(Uri.parse("mailto:"));
+           intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"mdeep1992@gmail.com"});
+           intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback ");
+           startActivity(Intent.createChooser(intent, "select any one"));
+       } catch (Exception e) {
+           e.printStackTrace();
+       }
     }
 
 
