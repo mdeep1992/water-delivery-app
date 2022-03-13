@@ -52,8 +52,9 @@ public class drawerbaseactivity extends AppCompatActivity implements NavigationV
                 composeEmail();
                 break;
             case R.id.nav_logout:
-                finish();
-                startActivity(new Intent(this, signinactivity.class));
+                Intent i = new Intent(this, signinactivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(i);
                 overridePendingTransition(0, 0);
                 break;
         }
