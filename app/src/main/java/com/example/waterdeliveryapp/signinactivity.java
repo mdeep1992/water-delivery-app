@@ -75,7 +75,9 @@ else if (edittextpassword.length()<6){
                             if (task.isSuccessful()) {
                                 progressBar.setVisibility(View.GONE);
                                 StyleableToast.makeText(signinactivity.this, "successfully signed", R.style.mytoast).show();
-                                startActivity(new Intent(signinactivity.this,dashboardactivity.class));
+                                Intent i = new Intent(signinactivity.this, dashboardactivity.class);
+                                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(i);
                             } else {
                                 progressBar.setVisibility(View.GONE);
 

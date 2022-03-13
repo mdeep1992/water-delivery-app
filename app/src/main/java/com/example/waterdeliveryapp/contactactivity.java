@@ -15,6 +15,6 @@ public class contactactivity extends drawerbaseactivity {
         super.onCreate(savedInstanceState);
         activityContactactivityBinding=ActivityContactactivityBinding.inflate(getLayoutInflater());
         setContentView(activityContactactivityBinding.getRoot());
-        allocateactivitytitle("Contact us");
+        allocateactivitytitle("About us");
     }
 }

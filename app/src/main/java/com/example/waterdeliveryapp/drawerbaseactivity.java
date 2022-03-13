@@ -51,7 +51,7 @@ public class drawerbaseactivity extends AppCompatActivity implements NavigationV
                 startActivity(new Intent(this, order.class));
                 overridePendingTransition(0, 0);
                 break;
-            case R.id.nav_contactus:
+            case R.id.nav_About_us:
                 startActivity(new Intent(this, contactactivity.class));
                 overridePendingTransition(0, 0);
                 break;

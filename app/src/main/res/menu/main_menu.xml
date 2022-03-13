@@ -4,9 +4,9 @@
         <item android:id="@+id/nav_order"
             android:icon="@drawable/ic_baseline_local_offer_24"
             android:title="Orders"/>
-        <item android:id="@+id/nav_contactus"
+        <item android:id="@+id/nav_About_us"
             android:icon="@drawable/ic_baseline_contact_support_24"
-            android:title="Contact Us"/>
+            android:title="About Us"/>
 
         <item android:id="@+id/nav_feedback"
             android:icon="@drawable/ic_baseline_feedback_24"
