@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.waterdeliveryapp.databinding.ActivityContactactivityBinding;
 
-public class contactactivity extends drawerbaseactivity {
+public class Aboutusactivity extends drawerbaseactivity {
     ActivityContactactivityBinding activityContactactivityBinding;
 
 

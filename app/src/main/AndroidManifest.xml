@@ -15,7 +15,7 @@
             android:name=".feedback"
             android:exported="false" />
         <activity
-            android:name=".contactactivity"
+            android:name=".Aboutusactivity"
             android:exported="false" />
         <activity
             android:name=".order"
