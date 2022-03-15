@@ -2,7 +2,7 @@
 
 ## 📱 Install
 
-[![WaterDelivery App](https://img.shields.io/badge/WaterDeliveryApp-APK-blue.svg?style=for-the-badge&logo=android)](https://github.com/mdeep1992/water-delivery-app/blob/main/app-debug.apk)
+[![WaterDelivery App](https://img.shields.io/badge/WaterDeliveryApp-APK-blue.svg?style=for-the-badge&logo=android)](https://github.com/mdeep1992/water-delivery-app/raw/main/app-debug.apk)
 
 ## Sign In, Sign Up and Forgot Password
 <p float="left" align="middle">
